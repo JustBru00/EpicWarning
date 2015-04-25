@@ -6,5 +6,5 @@ author: Justin Brubaker
 
 commands:
  warn:
-       description: Warns players of wrong actions. 
+    description: Warns players of wrong actions. 
     

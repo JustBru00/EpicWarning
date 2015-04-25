@@ -42,7 +42,7 @@ public class EpicWarning extends JavaPlugin {
 		}
 		
 		
-		return true;
+		return false;
 	}
 
 	@Override
