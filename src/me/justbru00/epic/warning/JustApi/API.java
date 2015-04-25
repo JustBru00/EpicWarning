@@ -31,7 +31,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 
-public class JustAPI {
+public class API {
 
 	public static ItemStack createSkull(String owner, String noncoloredDisplayName) {
 		ItemStack is = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);
@@ -79,6 +79,14 @@ public class JustAPI {
 		ArrayList<String> reallore = new ArrayList<String>();
 		reallore.add(color(lore));
 		im.setLore(reallore);
+		is.setItemMeta(im);
+		return is;
+	}
+	
+	public static ItemStack createItem(String displayName, Material m) {
+		ItemStack is = new ItemStack(m);
+		ItemMeta im = is.getItemMeta();
+		im.setDisplayName(color(displayName));		
 		is.setItemMeta(im);
 		return is;
 	}

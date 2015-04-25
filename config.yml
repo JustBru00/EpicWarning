@@ -1,0 +1,47 @@
+# EpicWarning configuration file.
+
+
+# Messages for plugin
+messages:
+  console messages:
+    you can not use that in console: ''
+  warn:
+    no permission: ''
+    too many args: ''
+    usage: ''    
+# Warning GUI
+gui:
+  first row:
+    displaynames:
+        one: ''
+        two: ''
+        three: ''
+        four: ''
+        five: ''
+        six: ''
+        seven: ''
+        eight: ''
+        nine: ''    
+  third row:
+    displaynames:
+        one: ''
+        two: ''
+        three: ''
+        four: ''
+        five: ''
+        six: ''
+        seven: ''
+        eight: ''
+        nine: '' 
+# Warning Options (For in the gui.)
+warning options:
+  options:
+    one: ''
+    two: ''
+    three: ''
+    four: ''
+    five: ''
+    six: ''
+    seven: ''
+    eight: ''
+    nine: ''
