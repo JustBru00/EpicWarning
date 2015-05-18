@@ -23,7 +23,7 @@ public class GUIs {
     	inv.setItem(24, API.createItem(API.color(main.getConfigString("gui.third row.displaynames.four")), Material.PAPER, API.color("&cAction: " + main.getConfigString("warning options.options.four"))));
     	inv.setItem(26, API.createItem(API.color(main.getConfigString("gui.third row.displaynames.five")), Material.PAPER, API.color("&cAction: " + main.getConfigString("warning options.options.five"))));
     	inv.setItem(27, API.createItem(API.color(main.getConfigString("gui.fourth row.displaynames.one")), Material.PAPER, API.color("&cAction: " + main.getConfigString("warning options.options.six"))));
-    	inv.setItem(29, API.createItem(API.color(main.getConfigString("gui,fourth row.displaynames.two")), Material.PAPER, API.color("&cAction: " + main.getConfigString("warning options,options.seven"))));
+    	inv.setItem(29, API.createItem(API.color(main.getConfigString("gui.fourth row.displaynames.two")), Material.PAPER, API.color("&cAction: " + main.getConfigString("warning options.options.seven"))));
     	inv.setItem(31, API.createItem(API.color(main.getConfigString("gui.fourth row.displaynames.three")), Material.PAPER, API.color("&cAction: " + main.getConfigString("warning options.options.eight"))));
     	
 		return inv;

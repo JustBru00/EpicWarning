@@ -11,34 +11,35 @@ messages:
     usage: ''    
 # Warning GUI
 gui:
-  first row:
-    displaynames:
-        one: 'test'
-        two: 'test2'
-        three: 'test3'
   third row:
     displaynames:
-        one: 'one'
-        two: 'two'
-        three: 'three'
-        four: 'four'
-        five: 'five'
+        one: '&4Spam'
+        two: '&4Caps'
+        three: '&4Swearing'
+        four: '&4Ddos Threat'
+        five: '&4Staff Abuse'
   fourth row:
     displaynames:
-        one: 'one'
-        two: 'two'
-        three: 'three'
-        four: 'four'
-        five: 'five'     
+        one: 'Extra #1'
+        two: 'Extra #2'
+        three: 'Extra #3'
+        four: 'Extra #4'
+        five: 'Extra #5'     
 # Warning Options (For in the gui.)
+# Here are the different options:
+# ADD - Adds a warning point to the player.
 warning options:
   options:
     one: 'ADD'
     two: 'ADD'
-    three: 'ADD2'
-    four: 'KICK'
-    five: 'BAN'
-    six: 'TEMPBAN2'
-    seven: 'TEMPBAN5'
-    eight: 'ADD10'
-    nine: 'ADD50'
+    three: 'ADD'
+    four: 'ADD'
+    five: 'ADD'
+    six: 'NONE'
+    seven: 'NONE'
+    eight: 'NONE'
+    nine: 'NONE'
+    ten: 'NONE'
+    max points: 10
+# The space below this comment is used by the plugin to store warning points. Please only edit it if you know what you are doing.    
+warning points:
