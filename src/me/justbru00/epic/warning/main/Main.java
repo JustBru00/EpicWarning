@@ -26,7 +26,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import io.github.warren1001.configapi.Config;
 import me.justbru00.epic.warning.Listeners.ClickWatcher;
+import me.justbru00.epic.warning.Listeners.JoinWatcher;
 import me.justbru00.epic.warning.commands.Punish;
 
 
@@ -34,7 +36,7 @@ public class Main extends JavaPlugin implements Listener{
 	
 	public static String Prefix = color("&8[&bEpic&4Warning&8] &c");	
 	public static ConsoleCommandSender clogger = Bukkit.getServer().getConsoleSender();	
-	
+	public Config points = new Config(this, "points.yml");
 	
 	
 	@Override
@@ -46,6 +48,7 @@ public class Main extends JavaPlugin implements Listener{
 	public void onEnable() {		
 		this.saveDefaultConfig();
 		getServer().getPluginManager().registerEvents(new ClickWatcher(this), this);	
+		getServer().getPluginManager().registerEvents(new JoinWatcher(this), this);
 		
 		getCommand("punish").setExecutor(new Punish(this));
 		

@@ -26,7 +26,7 @@ import me.justbru00.epic.warning.main.Main;
 
 public class ClickWatcher implements Listener {
 
-	private Main main;
+	Main main;
 	
 	public ClickWatcher(Main main) {
 		this.main = main;
