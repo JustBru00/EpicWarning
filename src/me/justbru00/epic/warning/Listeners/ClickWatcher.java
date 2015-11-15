@@ -17,24 +17,18 @@
 
 	Contact me at: justbru00@gmail.com
  */
-package me.justbru00.epic.warning.GUI;
+package me.justbru00.epic.warning.Listeners;
 
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
+
+import org.bukkit.event.Listener;
 
 import me.justbru00.epic.warning.main.Main;
-import me.justbru00.epic.warning.utils.ItemMaker;
 
-public class GUIs {
+public class ClickWatcher implements Listener {
+
+	private Main main;
 	
-	
-	
-	public static Inventory punishingGUI(Player target, Main main) {
-		Inventory inv = Bukkit.createInventory(null, 54, Main.color("&cPunishing: " + target.getName()));
-		
-		inv.setItem(10, ItemMaker.createItem("STAINED_CLAY", "&eSeverity 1", (short) 4));
-		
-		return inv;
+	public ClickWatcher(Main main) {
+		this.main = main;
 	}
 }

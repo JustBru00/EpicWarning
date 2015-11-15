@@ -1,0 +1,10 @@
+name: EpicPunish
+main: me.justbru00.epic.warning.main.Main
+version: 1.0
+description: Punishes players based on settings in the config.
+author: Justin Brubaker
+
+commands:
+ punish:
+    description: Punishes players based on settings in the config. 
+    
