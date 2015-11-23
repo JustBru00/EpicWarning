@@ -1,6 +1,9 @@
+/**
+ * THE (“EpicWarning”) SOURCE IS PROVIDED AS IS AT NO MONETARY COST FOR PERSONAL USE ONLY.
+ * ANY COMMERCIAL DISTRIBUTION/USE OF THE (“EpicWarning”) SOURCE IS STRICTLY PROHIBITED.
+ */
 package me.justbru00.epic.warning.Listeners;
 
-import java.sql.Date;
 import java.util.Calendar;
 
 import org.bukkit.event.EventHandler;
@@ -35,8 +38,9 @@ public class JoinWatcher implements Listener {
 		int Min = calendar.get(Calendar.MINUTE);
 		int Sec = calendar.get(Calendar.SECOND);
 		
+	
 		
-
+		
 		if (main.points.getBoolean(playerUUID + ".banned")) {
 			e.disallow(Result.KICK_BANNED, Main.color("&cYou are banned by &f" + main.points.getString(playerUUID + ".bannedby") 
 			+ " &cfor: &f" + main.points.getString(playerUUID + ".bannedreason")));
