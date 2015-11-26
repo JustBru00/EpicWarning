@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 import me.justbru00.epic.warning.GUI.GUIs;
 import me.justbru00.epic.warning.main.Main;
+import me.justbru00.epic.warning.utils.Messager;
 
 public class Punish implements CommandExecutor {
 	
@@ -32,7 +33,7 @@ public class Punish implements CommandExecutor {
 					  	try {
 					  		target = Bukkit.getPlayer(args[0]);
 					  	} catch (Exception e) {
-					  		Main.msgPlayer("&cThat player can't be found.", playerSender);
+					  		Messager.msgPlayer("&cThat player can't be found.", playerSender);
 					  		return true;
 					  	}		  
 					
@@ -42,14 +43,14 @@ public class Punish implements CommandExecutor {
 					  return true;					
 				  } 
 				  if (args.length == 0) {
-					  Main.msgPlayer("&fPlease put a players name after /warn", playerSender);
+					  Messager.msgPlayer("&fPlease put a players name after /warn", playerSender);
 					  return true;
 				  }
 				  if (args.length >= 2) {
-					  Main.msgPlayer("Too many args.", playerSender);
+					  Messager.msgPlayer("Too many args.", playerSender);
 					  return true;
 				  }
-			} Main.msgConsole("You can't warn players from CONSOLE at this time.");
+			} Messager.msgConsole("You can't warn players from CONSOLE at this time.");
 		}
 		
 		

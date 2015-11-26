@@ -7,7 +7,6 @@ package me.justbru00.epic.warning.main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +14,7 @@ import io.github.warren1001.configapi.Config;
 import me.justbru00.epic.warning.Listeners.ClickWatcher;
 import me.justbru00.epic.warning.Listeners.JoinWatcher;
 import me.justbru00.epic.warning.commands.Punish;
+import me.justbru00.epic.warning.utils.Messager;
 
 
 public class Main extends JavaPlugin implements Listener{
@@ -26,7 +26,7 @@ public class Main extends JavaPlugin implements Listener{
 	
 	@Override
 	public void onDisable() {
-		msgConsole("Plugin disabled.");
+		Messager.msgConsole("Plugin disabled.");
 	}
 
 	@Override
@@ -46,14 +46,7 @@ public class Main extends JavaPlugin implements Listener{
 	public String getConfigString(String location){		
 		return getConfig().getString(location);
 	}	
-	
-	public static void msgConsole(String msg) {
-		clogger.sendMessage(Prefix + color(msg));		
-	}
-	
-	public static void msgPlayer(String msg, Player player) {
-		player.sendMessage(Prefix + color(msg));
-	}	
+
 	
 	public static String color(String uncolored) {
 		return ChatColor.translateAlternateColorCodes('&', uncolored);
