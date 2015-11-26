@@ -1,6 +1,6 @@
 /**
  * THE (“EpicWarning”) SOURCE IS PROVIDED AS IS AT NO MONETARY COST FOR PERSONAL USE ONLY.
- * ANY COMMERCIAL DISTRIBUTION/USE OF THE (“EpicWarning”) SOURCE IS STRICTLY PROHIBITED.
+ * ANY COMMERCIAL OR NON-COMMERCIAL DISTRIBUTION/USE OF THE (“EpicWarning”) SOURCE IS STRICTLY PROHIBITED.
  */
 package me.justbru00.epic.warning.utils;
 
@@ -14,7 +14,7 @@ import me.justbru00.epic.warning.main.Main;
 
 public class ItemMaker {
 	
-	public static final int NO_DATA_VALUE = -1;
+	public static final short NO_DATA_VALUE = -1;
 	private static ItemStack is;
 
 	public static ItemStack createItem(String material, String name, short dataValue) {		
